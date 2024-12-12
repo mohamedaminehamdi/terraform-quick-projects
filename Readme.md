@@ -16,4 +16,3 @@ Welcome to the Git Task! Your objective is to practice collaborating on a Git re
 - Follow naming conventions and commit message guidelines as shared.
 
 Good luck and happy coding!
-Let the race begin !
