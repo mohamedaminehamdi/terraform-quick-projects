@@ -9,7 +9,7 @@ This repository contains two quick Terraform projects designed to demonstrate fo
 
 ## 📁 Project Structure
 
-terraform-projects/
+``` terraform-projects/
 │
 ├── 1-state-management/
 │ ├── main.tf
@@ -21,6 +21,7 @@ terraform-projects/
 │ └── provider.tf
 │
 └── README.md
+```
 
 ## 🗂 1. Terraform State Management (S3 + DynamoDB)
 
