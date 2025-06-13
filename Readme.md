@@ -9,7 +9,8 @@ This repository contains two quick Terraform projects designed to demonstrate fo
 
 ## 📁 Project Structure
 
-``` terraform-projects/
+``` bash
+terraform-projects/
 │
 ├── 1-state-management/
 │ ├── main.tf
