@@ -55,7 +55,7 @@ This project sets up a complete VPC architecture ready for deployment of service
 
 ### 🧠 Architecture Overview
 
-![VPC Architecture](assets/vpc.png)
+![VPC Architecture](assets/vpc.PNG)
 
 ### 🔧 Resources Created
 
