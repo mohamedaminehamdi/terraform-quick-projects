@@ -1,19 +1,103 @@
-# Git Task: Contributing to the Repository
+# Terraform Projects: State Management & VPC Setup
 
-Welcome to the Git Task! Your objective is to practice collaborating on a Git repository by performing the following tasks:
+This repository contains two quick Terraform projects designed to demonstrate foundational AWS infrastructure as code best practices:
 
-## Task Description
+1. **Terraform State Management** — Backend configuration using AWS S3 and DynamoDB
+2. **AWS VPC Setup** — A complete VPC environment setup including subnets, route tables, NAT Gateway, and more
 
-1. Clone the repository to your local machine.
-2. Add your personal files to the repository.
-3. Commit your changes with a meaningful message.
-4. Push your changes to the remote repository.
-5. Create a pull request (PR) to merge your changes into the main branch.
+---
 
-## Notes
+## 📁 Project Structure
 
-- Ensure that your personal files are appropriate and do not contain sensitive information.
-- Follow naming conventions and commit message guidelines as shared.
+terraform-projects/
+│
+├── 1-state-management/
+│ ├── main.tf
+│ └── backend.tf
+│
+├── 2-vpc-setup/
+│ ├── main.tf
+│ ├── variables.tf
+│ └── provider.tf
+│
+└── README.md
 
-Good luck and happy coding!
-Let the race begin !
+## 🗂 1. Terraform State Management (S3 + DynamoDB)
+
+> This project demonstrates how to configure remote Terraform state using **Amazon S3** and implement state locking with **DynamoDB**.
+
+### 🧠 Architecture Overview
+
+![State Management Architecture](assets/terraform_backend.png)
+
+### 🔧 Resources Created
+
+- S3 bucket for remote state storage
+- DynamoDB table for state locking and consistency
+
+### 📦 Files
+
+- `main.tf`: Creates the S3 bucket and DynamoDB table
+- `backend.tf`: Configures Terraform to use S3 + DynamoDB backend
+
+### ▶️ Usage
+
+```bash
+cd State_File_Management
+
+terraform init
+terraform apply
+```
+
+## 🌐 1. Terraform State Management AWS VPC Setup
+
+This project sets up a complete VPC architecture ready for deployment of services.
+
+### 🧠 Architecture Overview
+
+![VPC Architecture](assets/vpc.png)
+
+### 🔧 Resources Created
+
+- VPC  
+- Public subnets across 2 AZs  
+- Internet Gateway (IGW)
+- Route Tables  
+- Security Groups
+- EC2 instances
+- ALB application load Balancer
+
+### 📦 Files
+
+- `main.tf`: Defines all infrastructure components  
+- `variables.tf`: Customizable variables  
+- `provider.tf`: provider data
+
+### ▶️ Usage
+
+```bash
+cd 2-vpc-setup
+
+terraform init
+terraform apply
+```
+
+## 🧰 Prerequisites
+
+- [Terraform CLI](https://developer.hashicorp.com/terraform/downloads) version `>= 1.0`
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) configured with `aws configure`
+- Proper IAM permissions to create AWS resources, including:
+  - VPC
+  - EC2
+  - Internet Gateway (IGW)
+  - ALB
+  - Subnets
+  - Route Tables
+  - Security Groups
+  - Dynamo DB
+  - S3 Bucket
+
+## 🔐 Security Note
+
+> **Never commit sensitive credentials** (e.g., AWS access keys) to version control.  
+> Use environment variables, `.tfvars` files (added to `.gitignore`), or a secrets manager to securely manage sensitive data.
