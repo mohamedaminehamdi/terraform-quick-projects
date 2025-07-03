@@ -1,3 +1,10 @@
+[![Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform&logoColor=white)](https://www.terraform.io)
+[![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?logo=amazon-aws&logoColor=white)](https://aws.amazon.com)
+[![S3](https://img.shields.io/badge/State%20Storage-S3-569A31?logo=amazon-s3&logoColor=white)](https://aws.amazon.com/s3/)
+[![DynamoDB](https://img.shields.io/badge/State%20Locking-DynamoDB-4053D6?logo=amazon-dynamodb&logoColor=white)](https://aws.amazon.com/dynamodb/)
+[![Medium](https://img.shields.io/badge/Read%20Article-Medium-black?logo=medium)](https://medium.com/@mohamedaminehamdi/leveling-up-your-infrastructure-terraform-best-practices-from-real-world-projects-13c5abff925d)
+
+
 # Terraform Projects: State Management & VPC Setup
 
 This repository contains two quick Terraform projects designed to demonstrate foundational AWS infrastructure as code best practices:
