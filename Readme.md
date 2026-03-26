@@ -37,7 +37,7 @@ terraform-projects/
 
 ### 🧠 Architecture Overview
 
-![State Management Architecture](assets/terraform_backend.png)
+![State Management Architecture](assets/terraform-backend.png)
 
 ### 🔧 Resources Created
 
@@ -64,7 +64,7 @@ This project sets up a complete VPC architecture ready for deployment of service
 
 ### 🧠 Architecture Overview
 
-![VPC Architecture](assets/vpc.PNG)
+![VPC Architecture](assets/vpc.png)
 
 ### 🔧 Resources Created
 

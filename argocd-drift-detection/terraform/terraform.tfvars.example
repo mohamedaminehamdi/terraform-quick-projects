@@ -1,0 +1,10 @@
+# Copy to terraform.tfvars and adjust. Do not commit secrets.
+
+region                 = "us-east-1"
+cluster_name           = "gitops-eks-cluster"
+application_namespace  = "three-tier-app-dev"
+
+# After forking this repository, set your clone URL and branch.
+gitops_repo_url          = "https://github.com/YOUR_ORG/terraform-quick-projects.git"
+gitops_repo_path         = "argocd-drift-detection/manifests"
+gitops_target_revision   = "main"
